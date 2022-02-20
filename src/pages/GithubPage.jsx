@@ -1,9 +1,15 @@
+import { useContext } from "react";
+import Spinner from "../components/layout/Spinner";
+import UserItem from "../components/users/UserItem";
+import GithubContext from "../context/github/GithubContext";
+
 function GithubPage() {
-  return (
-    <div>
-      <h1>{process.env.REACT_APP_GITHUB_URL}</h1>
-    </div>
-  );
+  const { loading } = useContext(GithubContext);
+  if (!loading) {
+    return <UserItem />;
+  } else {
+    return <Spinner />;
+  }
 }
 
 export default GithubPage;

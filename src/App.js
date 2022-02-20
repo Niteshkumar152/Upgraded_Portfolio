@@ -1,10 +1,14 @@
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import GithubPage from "./pages/GithubPage";
+import { GithubProvider } from "./context/github/GithubContext";
 
 function App() {
   return (
-    <>
-      <GithubPage />
-    </>
+    <GithubProvider>
+      <Router>
+        <GithubPage />
+      </Router>
+    </GithubProvider>
   );
 }
 
