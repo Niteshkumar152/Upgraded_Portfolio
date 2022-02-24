@@ -18,15 +18,9 @@ function User({ user }) {
     public_gists,
     hireable,
   } = user;
-  console.log("In User.jsx", user);
   return (
     <>
-      <div className="w-full mx-auto lg:w-10/12">
-        <div className="mb-4">
-          <Link to="/" className="btn btn-ghost">
-            Back
-          </Link>
-        </div>
+      <div className="w-full mt-4 mx-auto lg:w-10/12">
         <div className="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 mb-8 md:gap-8">
           <div className="custom-card-image mb-6 md:mb-0">
             <div className="rounded-lg shadow-xl card image-full">

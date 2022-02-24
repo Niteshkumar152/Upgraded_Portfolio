@@ -9,20 +9,11 @@ export const GithubProvider = ({ children }) => {
     loading: false,
   };
   const [state, dispatch] = useReducer(githubReducer, initialState);
-
-  const setUser = (data) => dispatch({ type: "SET_USER", payload: data });
-  const setLoading = () => dispatch({ type: "SET_LOADING" });
-  const getRepos = (data) => dispatch({ type: "GET_REPOS", payload: data });
-
   return (
     <GithubContext.Provider
       value={{
-        user: state.user,
-        loading: state.loading,
-        setLoading,
-        setUser,
-        repos: state.repos,
-        getRepos,
+        ...state,
+        dispatch,
       }}
     >
       {children}
