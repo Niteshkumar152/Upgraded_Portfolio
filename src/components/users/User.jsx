@@ -8,8 +8,6 @@ function User({ user }) {
     location,
     bio,
     blog,
-    twitter_username,
-    login,
     html_url,
     followers,
     following,
