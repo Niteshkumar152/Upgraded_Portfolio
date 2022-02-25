@@ -7,7 +7,7 @@ function App() {
     <GithubProvider>
       <Router>
         <Routes>
-          <Route path="/" element={<GithubPage />} />
+          <Route path="/githubpage" element={<GithubPage />} />
         </Routes>
       </Router>
     </GithubProvider>

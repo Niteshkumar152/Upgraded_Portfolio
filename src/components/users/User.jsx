@@ -1,5 +1,4 @@
 import { FaCodepen, FaStore, FaUserFriends, FaUsers } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 function User({ user }) {
   const {
@@ -21,7 +20,7 @@ function User({ user }) {
   return (
     <>
       <div className="w-full mt-4 mx-auto lg:w-10/12">
-        <div className="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 mb-8 md:gap-8">
+        <div className="grid grid-cols-2 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 mb-8 md:gap-8">
           <div className="custom-card-image mb-6 md:mb-0">
             <div className="rounded-lg shadow-xl card image-full">
               <figure>
@@ -29,11 +28,10 @@ function User({ user }) {
               </figure>
               <div className="card-body justify-end">
                 <h2 className="card-title mb-0">{name}</h2>
-                <p>{login}</p>
               </div>
             </div>
           </div>
-          <div className="col-span-2">
+          <div className="col-span-2 mx-4">
             <div className="mb-6">
               <h1 className="text-3xl card-title">
                 {name}
@@ -54,7 +52,7 @@ function User({ user }) {
                 </a>
               </div>
             </div>
-            <div className="w-full rounded-lg shadow-md bg-base-100 stats">
+            <div className="stats stats-vertical flex-none md:flex w-full rounded-lg shadow-md bg-base-100">
               {location && (
                 <div className="stat">
                   <div className="stat-title text-md">Location</div>
@@ -75,25 +73,11 @@ function User({ user }) {
                   </div>
                 </div>
               )}
-              {twitter_username && (
-                <div className="stat">
-                  <div className="stat-title text-md">Twitter</div>
-                  <div className="text-lg stat-value">
-                    <a
-                      href={`https://twitter.com/${twitter_username}`}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {twitter_username}
-                    </a>
-                  </div>
-                </div>
-              )}
             </div>
           </div>
         </div>
 
-        <div className="w-full py-5 mb-6 rounded-lg shadow-md bg-base-100 stats">
+        <div className="stats stats-vertical lg:stats-horizontal w-full py-5 mb-6 rounded-lg shadow-md bg-base-100 stats">
           <div className="stat">
             <div className="stat-figure text-secondary">
               <FaUsers className="text-3xl md:text-5xl" />
