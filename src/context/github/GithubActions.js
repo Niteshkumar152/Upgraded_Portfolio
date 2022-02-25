@@ -1,17 +1,20 @@
+import axios from "axios";
 const GITHUB_URL = process.env.REACT_APP_GITHUB_URL;
 
+const github = axios.create({
+  baseURL: GITHUB_URL,
+});
+
 export const fetchUser = async () => {
-  const response = await fetch(`${GITHUB_URL}/users/niteshkumar152`);
+  const response = await github.get(`/users/niteshkumar152`);
   if (response.status === 404) {
     window.location = "/notfound";
   } else {
-    const data = await response.json();
-    return data;
+    return response.data;
   }
 };
 
 export const getUserRepos = async () => {
-  const response = await fetch(`${GITHUB_URL}/users/niteshkumar152/repos`);
-  const data = await response.json();
-  return data;
+  const response = await github.get(`/users/niteshkumar152/repos`);
+  return response.data;
 };
