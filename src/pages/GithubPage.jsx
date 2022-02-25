@@ -4,7 +4,7 @@ import GithubContext from "../context/github/GithubContext";
 import { fetchUser, getUserRepos } from "../context/github/GithubActions";
 import RepoList from "../components/repos/RepoList";
 import User from "../components/users/User";
-
+import { FaQuestionCircle } from "react-icons/fa";
 function GithubPage() {
   const { user, loading, repos, dispatch } = useContext(GithubContext);
 
@@ -27,6 +27,12 @@ function GithubPage() {
     <div>
       <User user={user} />
       <RepoList repos={repos} />
+      <div
+        className="animate-bounce cursor-pointer tooltip tooltip-open tooltip-top fixed bottom-10 right-10"
+        data-tip="Data fetched via API"
+      >
+        <FaQuestionCircle size={"4em"} />
+      </div>
     </div>
   );
 }

@@ -24,9 +24,9 @@ function User({ user }) {
               <figure>
                 <img src={avatar_url} alt="Avatar URL" />
               </figure>
-              <div className="card-body justify-end">
+              {/* <div className="card-body justify-end">
                 <h2 className="card-title mx-auto mb-0">{name}</h2>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="col-span-2 mx-4">
