@@ -1,8 +1,16 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import GithubPage from "./pages/GithubPage";
+import { GithubProvider } from "./context/github/GithubContext";
+
 function App() {
   return (
-    <div className="bg-red-500">
-      <h1>Portfolio Creation Started....</h1>
-    </div>
+    <GithubProvider>
+      <Router>
+        <Routes>
+          <Route path="/githubpage" element={<GithubPage />} />
+        </Routes>
+      </Router>
+    </GithubProvider>
   );
 }
 
