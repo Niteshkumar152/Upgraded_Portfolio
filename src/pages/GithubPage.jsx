@@ -28,8 +28,8 @@ function GithubPage() {
       <User user={user} />
       <RepoList repos={repos} />
       <div
-        className="animate-bounce cursor-pointer tooltip tooltip-open tooltip-top fixed bottom-10 right-10"
-        data-tip="Data fetched via API"
+        className="animate-bounce cursor-pointer tooltip tooltip-left fixed bottom-10 right-10"
+        data-tip="All Data fetched via an API "
       >
         <FaQuestionCircle size={"4em"} />
       </div>
