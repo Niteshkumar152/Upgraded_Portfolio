@@ -50,7 +50,7 @@ function User({ user }) {
                 </a>
               </div>
             </div>
-            <div className="stats stats-vertical flex-none md:flex w-full rounded-lg shadow-md bg-base-100">
+            <div className="stats stats-vertical sm:stats-horizontal flex-none md:flex w-full rounded-lg shadow-md bg-base-100">
               {location && (
                 <div className="stat">
                   <div className="stat-title text-md">Location</div>
