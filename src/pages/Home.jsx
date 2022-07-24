@@ -1,8 +1,5 @@
-
 function Home() {
-  return (
-    <div>Home</div>
-  )
+  return <div>Home Component comming soon</div>;
 }
 
-export default Home
+export default Home;
