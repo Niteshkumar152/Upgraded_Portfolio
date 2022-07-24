@@ -6,3 +6,75 @@
   border-radius: 0.5rem;
   opacity: 0.45;
 }
+
+.slide-left-1 {
+  animation: 1s slide-left-1;
+}
+@keyframes slide-left-1 {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.slide-left-2 {
+  animation: 2.1s slide-left-2;
+}
+@keyframes slide-left-2 {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.slide-left-3 {
+  animation: 2.3s slide-left-3;
+}
+@keyframes slide-left-3 {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.slide-left-4 {
+  animation: 2.5s slide-left-4;
+}
+@keyframes slide-left-4 {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.slide-left-5 {
+  animation: 2.7s slide-left-5;
+}
+@keyframes slide-left-5 {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.fade-in {
+  animation: fadeIn ease 3s;
+}
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
