@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { FaAlignJustify, FaHome } from "react-icons/fa";
 import { useState } from "react";
 function Navbar() {
-  const [menuActive, setMenuState] = useState(true);
+  const [menuActive, setMenuState] = useState(false);
 
   return (
     <nav
