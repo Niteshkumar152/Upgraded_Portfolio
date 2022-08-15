@@ -41,7 +41,7 @@ function Home() {
         </div>
       </div>
       <div className="mt-0 col-span-3 hidden md:block bg-white">
-        <img src={heroImg} />
+        <img src={heroImg} alt="hero-img" />
       </div>
     </div>
   );
