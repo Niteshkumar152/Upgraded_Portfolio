@@ -4,7 +4,7 @@ import heroImg from "../components/layout/assets/98636-coding.gif";
 
 function Home() {
   return (
-    <div className="grid grid-cols-8 mt-14 md:mt-0">
+    <div className="grid grid-cols-8 py-14 md:mt-0 bg-purple">
       <div className="col-span-8 md:col-span-5 m-auto">
         <div className="p-2">
           <h2 className="text-xl md:text-3xl cursor-default">
