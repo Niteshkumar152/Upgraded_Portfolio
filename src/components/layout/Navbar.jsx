@@ -21,7 +21,7 @@ function Navbar() {
     >
       <div className="fade-in border-red-500">
         <Link to="/" className="cursor-pointer">
-          <FaHome className="h-6 w-6" />
+          <FaHome className="h-6 w-6 hover:text-purple-400" />
         </Link>
       </div>
 
