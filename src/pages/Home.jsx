@@ -1,13 +1,17 @@
 import Typewriter from "typewriter-effect";
 //import socialLinks from "../constants/social_links";
 import heroImg from "../components/layout/assets/98636-coding.gif";
+import heroMobileImg from "../components/layout/assets/hero_mobile_image.png";
 
 function Home() {
   return (
     <div className="grid grid-cols-8 mt-14 md:mt-0">
       <div className="col-span-8 md:col-span-5 m-auto">
         <div className="p-2">
-          <h2 className="text-xl md:text-3xl cursor-default">
+          <div className="mobile-hero-image md:hidden">
+            <img src={heroMobileImg} alt="hero-mobile-img" />
+          </div>
+          <h2 className="text-xl md:text-3xl cursor-default mx-10">
             Hey There <span className="wave">👋</span>
           </h2>
           <h1 className="text-5xl md:text-6xl cursor-default">I'm Nitesh</h1>
