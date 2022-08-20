@@ -4,7 +4,7 @@ import heroImg from "../components/layout/assets/98636-coding.gif";
 
 function Home() {
   return (
-    <div className="grid grid-cols-8 py-14 md:mt-0 bg-purple">
+    <div className="grid grid-cols-8 mt-14 md:mt-0">
       <div className="col-span-8 md:col-span-5 m-auto">
         <div className="p-2">
           <h2 className="text-xl md:text-3xl cursor-default">
@@ -20,15 +20,21 @@ function Home() {
             }}
           />
         </div>
-        {/*<div className="px-2 py-2 md:mx-0">
+        <div className="px-2 py-2 md:mx-0">
           <button
             to="/contact"
             className="btn text-xs md:text-sm hover:bg-purple-400"
           >
             contact me
           </button>
+          <button
+            to="/contact"
+            className="btn text-xs text-black hover:text-white ml-2 md:text-sm bg-white hover:bg-purple-400"
+          >
+            download cv
+          </button>
         </div>
-        <div>
+        {/*<div>
           <div className="px-2 py-2 flex">
             {socialLinks.map((link) => {
               return (
