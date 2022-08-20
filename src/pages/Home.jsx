@@ -1,5 +1,5 @@
 import Typewriter from "typewriter-effect";
-import socialLinks from "../constants/social_links";
+//import socialLinks from "../constants/social_links";
 import heroImg from "../components/layout/assets/98636-coding.gif";
 
 function Home() {
