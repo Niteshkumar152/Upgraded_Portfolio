@@ -6,7 +6,7 @@ import { FaAddressBook, FaDownload } from "react-icons/fa";
 
 function Home() {
   return (
-    <div className="grid grid-cols-8 mt-14 md:mt-0">
+    <div className="grid grid-cols-8 mt-14 md:mt-0 slideDown">
       <div className="col-span-8 md:col-span-5 m-auto">
         <div className="p-2">
           <div className="mobile-hero-image md:hidden">

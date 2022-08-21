@@ -8,9 +8,7 @@
   border-radius: 0.5rem;
   opacity: 0.45;
 }
-*{
-  overflow: hidden;
-}
+
 .slide-left-1 {
   animation: 1s slide-left-1;
 }
