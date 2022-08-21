@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/layout/Navbar";
 import Delayed from "./components/Delayed";
 import { GithubProvider } from "./context/github/GithubContext";
+import { About } from "./components/About";
 
 function App() {
   return (
