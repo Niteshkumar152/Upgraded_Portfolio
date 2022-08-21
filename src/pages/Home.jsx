@@ -15,7 +15,9 @@ function Home() {
           <h2 className="text-center text-xl md:text-3xl cursor-default">
             Hey There <span className="wave">👋</span>
           </h2>
-          <h1 className="text-5xl md:text-6xl cursor-default">I'm Nitesh</h1>
+          <h1 className="text-center text-5xl md:text-6xl cursor-default">
+            I'm Nitesh
+          </h1>
 
           <div className="text-center text-xl md:text-2xl cursor-default font-sans italic">
             <Typewriter
@@ -27,7 +29,7 @@ function Home() {
             />
           </div>
         </div>
-        <div className="px-2 py-2 md:mx-0">
+        <div className="px-2 py-2 md:mx-0 flex">
           <button
             to="/contact"
             className="btn text-xs md:text-sm hover:bg-purple-400"
@@ -39,7 +41,9 @@ function Home() {
             className="btn text-xs text-black hover:text-white ml-2 md:text-sm bg-white hover:bg-purple-400"
           >
             <FaDownload className="mr-2" />
-            download cv
+            <a href="https://drive.google.com/file/d/1cJXkfB6IXMLtIwtR4xioM4KftnsoXCla/view?usp=sharing">
+              download cv
+            </a>
           </button>
         </div>
         {/*<div>

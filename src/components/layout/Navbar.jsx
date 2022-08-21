@@ -6,7 +6,7 @@ function Navbar() {
 
   return (
     <nav
-      className="
+      className={`
           font-mono
           flex flex-wrap
           items-center
@@ -17,7 +17,8 @@ function Navbar() {
           px-4
           text-lg text-gray-700
           bg-white
-        "
+          ${menuActive ? "slideDown" : ""}
+        `}
     >
       <div className="fade-in">
         <Link to="/" className="cursor-pointer">
@@ -26,7 +27,7 @@ function Navbar() {
       </div>
 
       <FaAlignJustify
-        className="h-6 w-6 cursor-pointer md:hidden block"
+        className="h-6 w-6 cursor-pointer md:hidden block hover:text-purple-400"
         onClick={() => setMenuState(!menuActive)}
       />
 
