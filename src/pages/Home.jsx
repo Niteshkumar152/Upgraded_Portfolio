@@ -5,6 +5,7 @@ import heroMobileImg from "../components/layout/assets/hero_mobile_image.png";
 import { FaAddressBook, FaDownload } from "react-icons/fa";
 import Contact from "../components/Contact";
 import { About } from "../components/About";
+import Delayed from "../components/Delayed";
 
 function Home() {
   return (
@@ -71,7 +72,9 @@ function Home() {
           <img src={heroImg} alt="hero-img" />
         </div>
       </div>
-      <About />
+      <Delayed waitBeforeShow={1000} showSpinner={false}>
+        <About />
+      </Delayed>
     </div>
   );
 }
