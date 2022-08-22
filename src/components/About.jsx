@@ -1,12 +1,13 @@
 import React from "react";
+import aboutImg from "../components/layout/assets/about-me.png";
 
 export const About = () => {
   return (
-    <div>
-      <div className="mt-20 text-center text-4xl md:text-5xl cursor-defaul">
-        About Me
+    <div className="mt-14">
+      <div className="mx-4 col-span-3 hidden md:block">
+        <img src={aboutImg} alt="about-img" />
       </div>
-      <p>About me section coming very soon !!</p>
+      <div className="col-span-8 md:col-span-5 m-auto"></div>
     </div>
   );
 };
