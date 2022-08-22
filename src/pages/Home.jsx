@@ -1,6 +1,6 @@
 import Typewriter from "typewriter-effect";
 //import socialLinks from "../constants/social_links";
-import heroImg from "../components/layout/assets/98636-coding.gif";
+import heroImg from "../components/layout/assets/hero_image.png";
 import heroMobileImg from "../components/layout/assets/hero_mobile_image.png";
 import { FaAddressBook, FaDownload } from "react-icons/fa";
 import Contact from "../components/Contact";
@@ -67,7 +67,7 @@ function Home() {
           */}
         </div>
 
-        <div className="mt-0 col-span-3 hidden md:block bg-white">
+        <div className="mt-0 col-span-3 hidden md:block">
           <img src={heroImg} alt="hero-img" />
         </div>
       </div>

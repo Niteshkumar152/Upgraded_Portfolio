@@ -13,14 +13,15 @@ const Contact = () => {
             ✕
           </label>
           <h3 class="text-lg font-bold">
-            You can reach me via email or phone !!
+            You can reach out to me via email or phone !!
           </h3>
           <p class="mt-2">
             <FaGoogle className="inline mr-2 hover:text-purple-400" />{" "}
             nitesh26589@gmail.com
           </p>
           <p class="py-2">
-            <FaPhone className="inline mr-2 hover:text-purple-400" /> 9814426589
+            <FaPhone className="inline mr-2 hover:text-purple-400" /> +91
+            9814426589
           </p>
         </div>
       </div>
