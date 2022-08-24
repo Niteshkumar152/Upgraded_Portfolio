@@ -19,7 +19,7 @@ export const About = () => {
             Designer
           </div>
         </h1>
-        <p className="text-base md:text-lg lg:text-xl cursor-default font-sans inline">
+        <p className="text-base lg:text-xl cursor-default font-sans inline">
           I am Nitesh from Punjab, India. I am currently working as a Software
           Developer at <span className="text-red-500 font-bold">ORACLE</span>{" "}
           Corporation in 5G Communications Team. I have graduated from National

@@ -36,12 +36,12 @@ function Home() {
           <div className="px-2 py-2 md:mx-0 flex">
             <label
               for="my-modal-3"
-              className="btn modal-button text-xs md:text-sm hover:bg-purple-400"
+              className="btn modal-button text-xs md:text-sm hover:bg-primary"
             >
               <FaAddressBook className="mr-2" />
               contact me
             </label>
-            <button className="btn text-xs text-black hover:text-white ml-2 md:text-sm bg-white hover:bg-purple-400">
+            <button className="btn text-xs text-black hover:text-white ml-2 md:text-sm bg-white hover:bg-primary">
               <FaDownload className="mr-2" />
               <a href="https://drive.google.com/file/d/1cJXkfB6IXMLtIwtR4xioM4KftnsoXCla/view?usp=sharing">
                 download cv
@@ -57,7 +57,7 @@ function Home() {
                 <a
                   href={link.url}
                   key={link.id}
-                  className="mr-4 hover:text-purple-400 hover:bg-white"
+                  className="mr-4 hover:text-primary hover:bg-white"
                 >
                   {link.icon}
                 </a>

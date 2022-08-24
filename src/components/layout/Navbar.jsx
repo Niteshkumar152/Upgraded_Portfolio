@@ -22,12 +22,12 @@ function Navbar() {
     >
       <div className="fade-in">
         <Link to="/" className="cursor-pointer">
-          <FaHome className="h-6 w-6 hover:text-purple-400" />
+          <FaHome className="h-6 w-6 hover:text-primary" />
         </Link>
       </div>
 
       <FaAlignJustify
-        className="h-6 w-6 cursor-pointer md:hidden block hover:text-purple-400"
+        className="h-6 w-6 cursor-pointer md:hidden block hover:text-primary"
         onClick={() => setMenuState(!menuActive)}
       />
 
@@ -47,7 +47,7 @@ function Navbar() {
           <li>
             <Link
               to="/"
-              className="md:p-4 py-2 block hover:text-purple-400 slide-left-2"
+              className="md:p-4 py-2 block hover:text-primary slide-left-2"
             >
               About
             </Link>
@@ -55,7 +55,7 @@ function Navbar() {
           <li>
             <Link
               to="/"
-              className="md:p-4 py-2 block hover:text-purple-400 slide-left-3"
+              className="md:p-4 py-2 block hover:text-primary slide-left-3"
             >
               Experience
               <div className="border-auto border-black fade-in w-20"></div>
@@ -64,7 +64,7 @@ function Navbar() {
           <li>
             <Link
               to="/"
-              className="md:p-4 py-2 block hover:text-purple-400 slide-left-4"
+              className="md:p-4 py-2 block hover:text-primary slide-left-4"
             >
               Projects
             </Link>
@@ -72,7 +72,7 @@ function Navbar() {
           <li>
             <Link
               to="/"
-              className="md:p-4 py-2 block hover:text-purple-400 slide-left-5"
+              className="md:p-4 py-2 block hover:text-primary slide-left-5"
             >
               Contact
             </Link>
