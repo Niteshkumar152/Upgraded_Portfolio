@@ -72,7 +72,7 @@ function Home() {
           <img src={heroImg} alt="hero-img" />
         </div>
       </div>
-      <Delayed waitBeforeShow={1000} showSpinner={false}>
+      <Delayed waitBeforeShow={1300} showSpinner={false}>
         <About />
       </Delayed>
     </div>

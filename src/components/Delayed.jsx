@@ -5,6 +5,7 @@ const Delayed = ({ children, waitBeforeShow = 1000, showSpinner = true }) => {
   const [isShown, setIsShown] = useState(false);
 
   useEffect(() => {
+    console.log(waitBeforeShow);
     setTimeout(() => {
       setIsShown(true);
     }, waitBeforeShow);
