@@ -15,11 +15,11 @@ export const About = () => {
         <h1 className="card-title text-3xl md:text-4xl lg:5xl cursor-default mr-4">
           about me
           <div class="badge badge-primary text-base">Developer</div>
-          <div class="badge badge-info text-base hidden md:visible">
+          <div class="badge badge-info text-base invisible md:visible">
             Designer
           </div>
         </h1>
-        <p className="text-base md:text-xl cursor-default font-sans inline">
+        <p className="text-base md:text-lg lg:text-xl cursor-default font-sans inline">
           I am Nitesh from Punjab, India. I am currently working as a Software
           Developer at <span className="text-red-500 font-bold">ORACLE</span>{" "}
           Corporation in 5G Communications Team. I have graduated from National
@@ -31,9 +31,7 @@ export const About = () => {
           others.
         </p>
         <div class="card-actions justify-end">
-          <div class="badge badge-success text-base visible md:hidden">
-            Desiging
-          </div>
+          <div class="badge badge-success text-base md:hidden">Desiging</div>
           <div class="badge badge-warning cursor-default font-sans text-base">
             Development
           </div>
