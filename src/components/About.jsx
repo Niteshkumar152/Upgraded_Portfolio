@@ -3,16 +3,21 @@ import aboutImg from "../components/layout/assets/about-me.png";
 
 export const About = () => {
   return (
-    <div className="grid grid-cols-8 mt-14">
+    <div className="grid grid-cols-8 mt-14 fade-in">
       <div className="mx-4 col-span-3 hidden md:block">
         <img src={aboutImg} alt="about-img" />
       </div>
 
       <div className="mx-4 card card-body bg-gray-800 hover:bg-gray-900 shadow-xl col-span-8 md:col-span-5 m-auto">
+        <figure>
+          <img src={aboutImg} alt="aboutImgMobile" className="md:hidden" />
+        </figure>
         <h1 className="card-title text-3xl md:text-5xl cursor-default mr-4">
           about me
           <div class="badge badge-primary text-base">Developer</div>
-          <div class="badge badge-info text-base">Designer</div>
+          <div class="badge badge-info text-base hidden md:visible">
+            Designer
+          </div>
         </h1>
         <p className="text-base md:text-xl cursor-default font-sans inline">
           I am Nitesh from Punjab, India. I am currently working as a Software
@@ -26,6 +31,9 @@ export const About = () => {
           others.
         </p>
         <div class="card-actions justify-end">
+          <div class="badge badge-success text-base visible md:hidden">
+            Desiging
+          </div>
           <div class="badge badge-warning cursor-default font-sans text-base">
             Development
           </div>
