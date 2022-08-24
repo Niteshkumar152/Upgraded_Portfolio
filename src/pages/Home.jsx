@@ -1,11 +1,11 @@
 import Typewriter from "typewriter-effect";
-//import socialLinks from "../constants/social_links";
 import heroImg from "../components/layout/assets/hero_image.png";
 import heroMobileImg from "../components/layout/assets/hero_mobile_image.png";
 import { FaAddressBook, FaDownload } from "react-icons/fa";
 import Contact from "../components/Contact";
 import { About } from "../components/About";
 import Delayed from "../components/Delayed";
+import { Footer } from "../components/Footer";
 
 function Home() {
   return (
@@ -49,23 +49,6 @@ function Home() {
             </button>
           </div>
           <Contact />
-
-          {/*<div>
-          <div className="px-2 py-2 flex">
-            {socialLinks.map((link) => {
-              return (
-                <a
-                  href={link.url}
-                  key={link.id}
-                  className="mr-4 hover:text-primary hover:bg-white"
-                >
-                  {link.icon}
-                </a>
-              );
-            })}
-          </div>
-        </div>
-          */}
         </div>
 
         <div className="mt-0 col-span-3 hidden md:block">
@@ -74,6 +57,9 @@ function Home() {
       </div>
       <Delayed waitBeforeShow={1300} showSpinner={false}>
         <About />
+      </Delayed>
+      <Delayed waitBeforeShow={1500} showSpinner={false}>
+        <Footer />
       </Delayed>
     </div>
   );
