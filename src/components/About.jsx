@@ -8,13 +8,13 @@ export const About = () => {
         <img src={aboutImg} alt="about-img" />
       </div>
 
-      <div className="mr-4 card card-body bg-gray-800 hover:bg-gray-900 shadow-xl col-span-8 md:col-span-5 m-auto">
-        <h1 className="card-title text-4xl md:text-5xl cursor-default mr-4">
+      <div className="mx-4 card card-body bg-gray-800 hover:bg-gray-900 shadow-xl col-span-8 md:col-span-5 m-auto">
+        <h1 className="card-title text-3xl md:text-5xl cursor-default mr-4">
           about me
           <div class="badge badge-primary">Developer</div>
           <div class="badge badge-info">Designer</div>
         </h1>
-        <p className="text-xl md:text-xl cursor-default font-sans inline">
+        <p className="text-base md:text-xl cursor-default font-sans inline">
           I am Nitesh from Punjab, India. I am currently working as a Software
           Developer at <span className="text-red-500 font-bold">ORACLE</span>{" "}
           Corporation in 5G Communications Team. I have graduated from National
