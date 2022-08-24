@@ -12,7 +12,7 @@ export const About = () => {
         <figure>
           <img src={aboutImg} alt="aboutImgMobile" className="md:hidden" />
         </figure>
-        <h1 className="card-title text-3xl md:text-5xl cursor-default mr-4">
+        <h1 className="card-title text-3xl md:text-4xl lg:5xl cursor-default mr-4">
           about me
           <div class="badge badge-primary text-base">Developer</div>
           <div class="badge badge-info text-base hidden md:visible">
