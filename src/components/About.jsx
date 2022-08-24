@@ -11,8 +11,8 @@ export const About = () => {
       <div className="mx-4 card card-body bg-gray-800 hover:bg-gray-900 shadow-xl col-span-8 md:col-span-5 m-auto">
         <h1 className="card-title text-3xl md:text-5xl cursor-default mr-4">
           about me
-          <div class="badge badge-primary text-base md:text-xl">Developer</div>
-          <div class="badge badge-info text-base md:text-xl">Designer</div>
+          <div class="badge badge-primary text-base">Developer</div>
+          <div class="badge badge-info text-base">Designer</div>
         </h1>
         <p className="text-base md:text-xl cursor-default font-sans inline">
           I am Nitesh from Punjab, India. I am currently working as a Software
@@ -26,13 +26,13 @@ export const About = () => {
           others.
         </p>
         <div class="card-actions justify-end">
-          <div class="badge badge-warning cursor-default font-sans text-base md:text-xl">
+          <div class="badge badge-warning cursor-default font-sans text-base">
             Development
           </div>
-          <div class="badge badge-info cursor-default font-sans text-base md:text-xl">
+          <div class="badge badge-info cursor-default font-sans text-base">
             Testing
           </div>
-          <div class="badge badge-error cursor-default font-sans text-base md:text-xl">
+          <div class="badge badge-error cursor-default font-sans text-base">
             Deployment
           </div>
         </div>
