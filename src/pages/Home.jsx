@@ -3,14 +3,15 @@ import heroImg from "../components/layout/assets/hero_image.png";
 import heroMobileImg from "../components/layout/assets/hero_mobile_image.png";
 import { FaAddressBook, FaDownload } from "react-icons/fa";
 import Contact from "../components/Contact";
-import { About } from "../components/About";
 import Delayed from "../components/Delayed";
+import { About } from "../components/About";
+import { Experience } from "../components/Experience";
 import { Footer } from "../components/Footer";
 
 function Home() {
   return (
     <div>
-      <div className="grid grid-cols-8 mt-14 slideDown">
+      <div className="grid grid-cols-8 mt-14 fade-in">
         <div className="col-span-8 md:col-span-5 m-auto">
           <div className="p-2">
             <div className="mobile-hero-image md:hidden">
@@ -57,6 +58,9 @@ function Home() {
       </div>
       <Delayed waitBeforeShow={1300} showSpinner={false}>
         <About />
+      </Delayed>
+      <Delayed waitBeforeShow={1400} showSpinner={false}>
+        <Experience />
       </Delayed>
       <Delayed waitBeforeShow={1500} showSpinner={false}>
         <Footer />
