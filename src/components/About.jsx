@@ -40,6 +40,9 @@ export const About = () => {
           <div className="badge badge-info cursor-default font-sans text-base">
             Testing
           </div>
+          <div className="badge badge-accent cursor-default font-sans text-base">
+            Debugging
+          </div>
           <div className="badge badge-error cursor-default font-sans text-base">
             Deployment
           </div>

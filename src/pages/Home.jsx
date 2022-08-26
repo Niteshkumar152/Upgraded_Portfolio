@@ -6,6 +6,7 @@ import Contact from "../components/Contact";
 import Delayed from "../components/Delayed";
 import { About } from "../components/About";
 import { Experience } from "../components/Experience";
+import { Blog } from "../components/Blog";
 import { Footer } from "../components/Footer";
 
 function Home() {
@@ -35,10 +36,7 @@ function Home() {
             </div>
           </div>
           <div className="px-2 py-2 md:mx-0 flex">
-            <label
-              for="my-modal-3"
-              className="btn modal-button text-xs md:text-sm hover:bg-primary"
-            >
+            <label className="btn modal-button text-xs md:text-sm hover:bg-primary">
               <FaAddressBook className="mr-2" />
               contact me
             </label>
@@ -63,6 +61,9 @@ function Home() {
         <Experience />
       </Delayed>
       <Delayed waitBeforeShow={1500} showSpinner={false}>
+        <Blog />
+      </Delayed>
+      <Delayed waitBeforeShow={1600} showSpinner={false}>
         <Footer />
       </Delayed>
     </div>

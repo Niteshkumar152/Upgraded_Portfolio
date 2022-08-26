@@ -1,3 +1,3 @@
 export const Experience = () => {
-  return <div>Experience section comming soon</div>;
+  return <div className="fade-in"></div>;
 };
