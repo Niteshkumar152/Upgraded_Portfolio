@@ -24,7 +24,7 @@ export const Blog = () => {
                     return (
                       <div
                         key={tag?.id}
-                        className={`badge text-base badge-${tag?.color}`}
+                        className={`badge text-base badge-${tag?.color} p-3`}
                       >
                         {tag?.tag}
                       </div>

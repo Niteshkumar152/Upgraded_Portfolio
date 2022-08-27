@@ -14,8 +14,8 @@ export const About = () => {
         </figure>
         <h1 className="card-title text-3xl md:text-4xl lg:5xl cursor-default mr-4">
           about me
-          <div className="badge badge-primary text-base">Developer</div>
-          <div className="badge badge-info text-base invisible md:visible">
+          <div className="badge badge-primary text-base p-3">Developer</div>
+          <div className="badge badge-info text-base invisible md:visible p-3">
             Designer
           </div>
         </h1>
@@ -31,19 +31,19 @@ export const About = () => {
           others.
         </p>
         <div className="card-actions justify-end">
-          <div className="badge badge-success text-base md:hidden">
+          <div className="badge badge-success text-base md:hidden p-3">
             Desiging
           </div>
-          <div className="badge badge-warning cursor-default font-sans text-base">
+          <div className="badge badge-warning cursor-default font-sans text-base p-3">
             Development
           </div>
-          <div className="badge badge-info cursor-default font-sans text-base">
+          <div className="badge badge-info cursor-default font-sans text-base p-3">
             Testing
           </div>
-          <div className="badge badge-accent cursor-default font-sans text-base">
+          <div className="badge badge-accent cursor-default font-sans text-base p-3">
             Debugging
           </div>
-          <div className="badge badge-error cursor-default font-sans text-base">
+          <div className="badge badge-error cursor-default font-sans text-base p-3">
             Deployment
           </div>
         </div>

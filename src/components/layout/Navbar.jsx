@@ -7,6 +7,9 @@ function Navbar() {
   return (
     <nav
       className={`
+      fixed
+      top-0
+      z-50
           font-mono
           flex flex-wrap
           items-center
