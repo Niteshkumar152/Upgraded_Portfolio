@@ -1,4 +1,5 @@
 import { Projects } from "./Projects";
+
 export const Project = () => {
   return (
     <div className="fade-in my-20">
@@ -11,7 +12,7 @@ export const Project = () => {
 
       <div className="text-center my-20">
         <button className="btn btn-success">
-          <a href="all-projects-page">More Projects...</a>
+          <a href="/all-projects-page">More Projects...</a>
         </button>
       </div>
     </div>

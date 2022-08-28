@@ -8,6 +8,7 @@ import { About } from "../components/About";
 import { Experience } from "../components/Experience";
 import { Blog } from "../components/Blog";
 import { Project } from "../components/Project";
+import { Footer } from "../components/Footer";
 /* import { Stats } from "../components/Stats"; */
 import { Element } from "react-scroll";
 
@@ -83,6 +84,9 @@ function Home() {
       {/* <Delayed waitBeforeShow={1600} showSpinner={false}>
         <Stats />
       </Delayed> */}
+      <Delayed waitBeforeShow={2000} showSpinner={false}>
+        <Footer />
+      </Delayed>
     </div>
   );
 }

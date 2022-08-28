@@ -37,10 +37,10 @@ export const Projects = ({ showLessProjects }) => {
               </figure>
 
               <div className="card-body">
-                <h2 className="card-title">New album is released!</h2>
-                <p>Click the button to listen on Spotiwhy app.</p>
+                <h2 className="card-title">Project Name : Comming sooonn</h2>
+                <p>Coming Soon......</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-primary">Listen</button>
+                  <button className="btn btn-primary">Demo</button>
                 </div>
               </div>
             </div>

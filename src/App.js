@@ -5,7 +5,6 @@ import Navbar from "./components/layout/Navbar";
 import Delayed from "./components/Delayed";
 import { ProjectPage } from "./pages/ProjectPage";
 import { GithubProvider } from "./context/github/GithubContext";
-import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -17,9 +16,6 @@ function App() {
           <Route path="/custom-github-page" element={<GithubPage />} />
           <Route path="/all-projects-page" element={<ProjectPage showLessProjects={false} />} />
         </Routes>
-        <Delayed waitBeforeShow={2000} showSpinner={false}>
-        <Footer />
-      </Delayed>
       </Router>
       
     </GithubProvider>

@@ -1,6 +1,8 @@
 import project_img from "../components/layout/assets/all-projects.png";
 import { Projects } from "../components/Projects";
 import { FaGithub } from "react-icons/fa";
+import { Footer } from "../components/Footer";
+import { Element } from "react-scroll";
 
 export const ProjectPage = () => {
   return (
@@ -13,6 +15,7 @@ export const ProjectPage = () => {
           <figure>
             <img src={project_img} alt="aboutImgMobile" className="md:hidden" />
           </figure>
+
           <h1 className="card-title text-3xl md:text-4xl lg:5xl cursor-default mr-4">
             All Projects
           </h1>
@@ -21,7 +24,7 @@ export const ProjectPage = () => {
             far. Please visit my custom github page to explore the coding style
             which I follow for my projects.
           </p>
-          <div></div>
+
           <div className="card-actions justify-end">
             <div className="badge badge-success text-base p-3">Frontend</div>
             <div className="badge badge-warning cursor-default font-sans text-base p-3">
@@ -34,21 +37,24 @@ export const ProjectPage = () => {
               Springboot
             </div>
           </div>
+          <div>
+            <button className="btn btn-dark border-white hover:border-red-500">
+              <a href="/custom-github-page">
+                <FaGithub className="inline mr-2" />
+                Custom Github
+              </a>
+            </button>
+          </div>
         </div>
       </div>
-      <div className="text-center text-5xl md:text-6xl cursor-default mb-4 mt-20">
-        All Projects
-      </div>
-      <div className="w-40 h-1 mb-14 bg-primary mx-auto rounded"></div>
-      <Projects />
-      <div className="text-center">
-        <button className="btn btn-dark border-white hover:border-red-500">
-          <a href="custom-github-page">
-            <FaGithub className="inline mr-2" />
-            Github
-          </a>
-        </button>
-      </div>
+      <Element name="all-projects-page">
+        <div className="text-center text-5xl md:text-6xl cursor-default mb-4 mt-20">
+          All Projects
+        </div>
+        <div className="w-40 h-1 mb-14 bg-primary mx-auto rounded"></div>
+        <Projects />
+      </Element>
+      <Footer />
     </div>
   );
 };

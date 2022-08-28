@@ -1,12 +1,9 @@
-import { Link } from "react-router-dom";
 import { FaAlignJustify, FaHome } from "react-icons/fa";
 import { useState } from "react";
-
 import { Link as Scroll } from "react-scroll";
 
 function Navbar() {
   const [menuActive, setMenuState] = useState(false);
-
   return (
     <nav
       className={`
@@ -27,9 +24,9 @@ function Navbar() {
         `}
     >
       <div className="fade-in">
-        <Link to="/" className="cursor-pointer">
+        <a href="/" className="cursor-pointer">
           <FaHome className="h-6 w-6 hover:text-primary" />
-        </Link>
+        </a>
       </div>
 
       <FaAlignJustify
@@ -42,51 +39,108 @@ function Navbar() {
           !menuActive ? "hidden" : ""
         }`}
       >
-        <ul
-          className="
+        {window.location.pathname === "/custom-github-page" ? (
+          <ul
+            className="
               pt-4
               text-base text-gray-700
               md:flex
               md:justify-between 
               md:pt-0"
-        >
-          <li>
-            <Scroll
-              to="about-section"
-              smooth={true}
-              className="md:p-4 py-2 block hover:text-primary slide-left-2 cursor-pointer"
-            >
-              About
-            </Scroll>
-          </li>
-          <li>
-            <Scroll
-              to="experience-section"
-              smooth={true}
-              className="md:p-4 py-2 block hover:text-primary slide-left-3 cursor-pointer"
-            >
-              Experience
-              <div className="border-auto border-black fade-in w-20"></div>
-            </Scroll>
-          </li>
-          <li>
-            <Scroll
-              to="projects-section"
-              smooth={true}
-              className="md:p-4 py-2 block hover:text-primary slide-left-4 cursor-pointer"
-            >
-              Projects
-            </Scroll>
-          </li>
-          <li>
-            <label
-              htmlFor="my-modal-3"
-              className="md:p-4 py-2 block hover:text-primary slide-left-5 cursor-pointer"
-            >
-              Contact
-            </label>
-          </li>
-        </ul>
+          >
+            {" "}
+            <li>
+              <Scroll
+                to="about-section-github-page"
+                smooth={true}
+                onClick={() => setMenuState(false)}
+                className="md:p-4 py-2 block hover:text-primary slide-left-2 cursor-pointer"
+              >
+                About
+              </Scroll>
+            </li>{" "}
+            <li>
+              <Scroll
+                to="github-page-respositories"
+                smooth={true}
+                onClick={() => setMenuState(false)}
+                className="md:p-4 py-2 block hover:text-primary slide-left-3 cursor-pointer"
+              >
+                Respositories
+              </Scroll>
+            </li>
+          </ul>
+        ) : window.location.pathname === "/all-projects-page" ? (
+          <ul
+            className="
+              pt-4
+              text-base text-gray-700
+              md:flex
+              md:justify-between 
+              md:pt-0"
+          >
+            {" "}
+            <li>
+              <Scroll
+                to="all-projects-page"
+                smooth={true}
+                onClick={() => setMenuState(false)}
+                className="md:p-4 py-2 block hover:text-primary slide-left-2 cursor-pointer"
+              >
+                Projects
+              </Scroll>
+            </li>
+          </ul>
+        ) : (
+          <ul
+            className="
+              pt-4
+              text-base text-gray-700
+              md:flex
+              md:justify-between 
+              md:pt-0"
+          >
+            <li>
+              <Scroll
+                to="about-section"
+                smooth={true}
+                onClick={() => setMenuState(false)}
+                className="md:p-4 py-2 block hover:text-primary slide-left-2 cursor-pointer"
+              >
+                About
+              </Scroll>
+            </li>
+            <li>
+              <Scroll
+                to="experience-section"
+                smooth={true}
+                onClick={() => setMenuState(false)}
+                className="md:p-4 py-2 block hover:text-primary slide-left-3 cursor-pointer"
+              >
+                Experience
+              </Scroll>
+            </li>
+            <li>
+              <Scroll
+                to="projects-section"
+                smooth={true}
+                onClick={() => setMenuState(false)}
+                className="md:p-4 py-2 block hover:text-primary slide-left-4 cursor-pointer"
+              >
+                Projects
+              </Scroll>
+            </li>
+            <li>
+              <label
+                htmlFor="my-modal-3"
+                onClick={() => setMenuState(false)}
+                className="md:p-4 py-2 block hover:text-primary slide-left-5 cursor-pointer"
+              >
+                Contact
+              </label>
+            </li>
+          </ul>
+        )}
       </div>
     </nav>
   );
