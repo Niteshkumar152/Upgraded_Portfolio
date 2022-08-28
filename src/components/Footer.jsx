@@ -3,7 +3,7 @@ import socialLinks from "../constants/social_links";
 
 export const Footer = () => {
   return (
-    <div className="fade-in mt-32">
+    <div className="fade-in mt-32 negative-z">
       <footer className="footer footer-center p-10 bg-primary text-primary-content">
         <div>
           <svg

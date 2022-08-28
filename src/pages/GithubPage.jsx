@@ -24,7 +24,7 @@ function GithubPage() {
   return loading ? (
     <Spinner />
   ) : (
-    <div>
+    <div className="mt-24">
       <User user={user} />
       <RepoList repos={repos} />
       <div

@@ -7,12 +7,14 @@ import Delayed from "../components/Delayed";
 import { About } from "../components/About";
 import { Experience } from "../components/Experience";
 import { Blog } from "../components/Blog";
-import { Footer } from "../components/Footer";
+import { Project } from "../components/Project";
+/* import { Stats } from "../components/Stats"; */
+import { Element } from "react-scroll";
 
 function Home() {
   return (
     <div>
-      <div className="grid grid-cols-8 mt-14 fade-in">
+      <div className="grid grid-cols-8 mt-24 fade-in">
         <div className="col-span-8 md:col-span-5 m-auto">
           <div className="p-2">
             <div className="mobile-hero-image md:hidden">
@@ -36,7 +38,10 @@ function Home() {
             </div>
           </div>
           <div className="px-2 py-2 md:mx-0 flex">
-            <label className="btn modal-button text-xs md:text-sm hover:bg-primary">
+            <label
+              htmlFor="my-modal-3"
+              className="btn modal-button text-xs md:text-sm hover:bg-primary"
+            >
               <FaAddressBook className="mr-2" />
               contact me
             </label>
@@ -54,18 +59,30 @@ function Home() {
           <img src={heroImg} alt="hero-img" />
         </div>
       </div>
-      <Delayed waitBeforeShow={1300} showSpinner={false}>
-        <About />
-      </Delayed>
-      <Delayed waitBeforeShow={1400} showSpinner={false}>
-        <Experience />
-      </Delayed>
-      <Delayed waitBeforeShow={1500} showSpinner={false}>
+      <Element name="about-section">
+        <Delayed waitBeforeShow={1300} showSpinner={false}>
+          <About />
+        </Delayed>
+      </Element>
+
+      <Element name="experience-section">
+        <Delayed waitBeforeShow={1400} showSpinner={false}>
+          <Experience />
+        </Delayed>
+      </Element>
+
+      <Element name="projects-section">
+        <Delayed waitBeforeShow={1500} showSpinner={false}>
+          <Project />
+        </Delayed>
+      </Element>
+
+      <Delayed waitBeforeShow={1600} showSpinner={false}>
         <Blog />
       </Delayed>
-      <Delayed waitBeforeShow={1600} showSpinner={false}>
-        <Footer />
-      </Delayed>
+      {/* <Delayed waitBeforeShow={1600} showSpinner={false}>
+        <Stats />
+      </Delayed> */}
     </div>
   );
 }

@@ -193,3 +193,6 @@ h4 {
 		-webkit-transform: translateY(0%);
 	}	
 }
+.negative-z{
+  z-index: -50 !important;
+}

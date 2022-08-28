@@ -30,6 +30,9 @@ export const About = () => {
           manner. I am capable of being a good team player. I enjoy working with
           others.
         </p>
+        <p className="text-base lg:text-xl cursor-default font-sans">
+          I have experienced different phases of Software lifecycle:
+        </p>
         <div className="card-actions justify-end">
           <div className="badge badge-success text-base md:hidden p-3">
             Desiging

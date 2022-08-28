@@ -13,7 +13,7 @@ import {
     {
       id: 2,
       icon: <FaGithub size={"2.5em"}></FaGithub>,
-      url: "https://github.com/Niteshkumar152",
+      url: "custom-github-page",
     },
     {
         id: 3,

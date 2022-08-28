@@ -1,15 +1,18 @@
 import { Link } from "react-router-dom";
 import { FaAlignJustify, FaHome } from "react-icons/fa";
 import { useState } from "react";
+
+import { Link as Scroll } from "react-scroll";
+
 function Navbar() {
   const [menuActive, setMenuState] = useState(false);
 
   return (
     <nav
       className={`
-      fixed
-      top-0
-      z-50
+          fixed
+          top-0
+          z-50
           font-mono
           flex flex-wrap
           items-center
@@ -48,37 +51,40 @@ function Navbar() {
               md:pt-0"
         >
           <li>
-            <Link
-              to="/"
-              className="md:p-4 py-2 block hover:text-primary slide-left-2"
+            <Scroll
+              to="about-section"
+              smooth={true}
+              className="md:p-4 py-2 block hover:text-primary slide-left-2 cursor-pointer"
             >
               About
-            </Link>
+            </Scroll>
           </li>
           <li>
-            <Link
-              to="/"
-              className="md:p-4 py-2 block hover:text-primary slide-left-3"
+            <Scroll
+              to="experience-section"
+              smooth={true}
+              className="md:p-4 py-2 block hover:text-primary slide-left-3 cursor-pointer"
             >
               Experience
               <div className="border-auto border-black fade-in w-20"></div>
-            </Link>
+            </Scroll>
           </li>
           <li>
-            <Link
-              to="/"
-              className="md:p-4 py-2 block hover:text-primary slide-left-4"
+            <Scroll
+              to="projects-section"
+              smooth={true}
+              className="md:p-4 py-2 block hover:text-primary slide-left-4 cursor-pointer"
             >
               Projects
-            </Link>
+            </Scroll>
           </li>
           <li>
-            <Link
-              to="/"
-              className="md:p-4 py-2 block hover:text-primary slide-left-5"
+            <label
+              htmlFor="my-modal-3"
+              className="md:p-4 py-2 block hover:text-primary slide-left-5 cursor-pointer"
             >
               Contact
-            </Link>
+            </label>
           </li>
         </ul>
       </div>
