@@ -14,7 +14,7 @@ const data = [
     projectDescription: "Weather App is a single page application that accepts country name/city name as an input from the user and fetches the details about the weather of that place. The front end is built using bootstrap and API calls are made to OpenWeather API to get the data",
     projectLink: "https://pacific-sea-70481.herokuapp.com/",
     buttonData: "See Project",
-    projectImg: "https://github.com/Niteshkumar152/Upgraded_Portfolio/blob/main/src/components/layout/assets/project-4.png",
+    projectImg: "https://raw.githubusercontent.com/Niteshkumar152/Upgraded_Portfolio/main/src/components/layout/assets/project-4.png",
     techStack:[{tech:"Bootstrap",color:"info"},{tech:"API's",color:"error"}]
   },
   {
