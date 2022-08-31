@@ -33,14 +33,29 @@ export const Projects = ({ showLessProjects }) => {
               className="card lg:card-side bg-gray-800 hover:bg-gray-900 shadow-xl cursor-default mx-4 mb-8 md:mx-20"
             >
               <figure>
-                <img src="https://placeimg.com/400/400/arch" alt="Album" />
+                <img src={project?.projectImg} alt="Project" />
               </figure>
 
               <div className="card-body">
-                <h2 className="card-title">Project Name : Comming sooonn</h2>
-                <p>Coming Soon......</p>
+                <h2 className="card-title">{project?.projectTitle}</h2>
+                <p>{project?.projectDescription}</p>
+                <div className="card-actions justify-start mt-4">
+                  Tech Stack Used :
+                  {project?.techStack.map((tag, index) => {
+                    return (
+                      <div
+                        key={index}
+                        className={`badge text-base badge-${tag?.color} p-3`}
+                      >
+                        {tag?.tech}
+                      </div>
+                    );
+                  })}
+                </div>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-primary">Demo</button>
+                  <button className="btn btn-primary mt-4">
+                    {project?.buttonData}
+                  </button>
                 </div>
               </div>
             </div>
