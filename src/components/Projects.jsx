@@ -33,14 +33,13 @@ export const Projects = ({ showLessProjects }) => {
               className="card lg:card-side bg-gray-800 hover:bg-gray-900 shadow-xl cursor-default mx-4 mb-8 md:mx-20"
             >
               <figure>
-                <img src={project?.projectImg} alt="Project" />
+                <img src={project?.projectImg} alt="Project" className="p-4" />
               </figure>
 
               <div className="card-body">
                 <h2 className="card-title">{project?.projectTitle}</h2>
                 <p>{project?.projectDescription}</p>
                 <div className="card-actions justify-start mt-4">
-                  Tech Stack Used :
                   {project?.techStack.map((tag, index) => {
                     return (
                       <div
