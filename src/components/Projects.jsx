@@ -33,7 +33,11 @@ export const Projects = ({ showLessProjects }) => {
               className="card lg:card-side bg-gray-800 hover:bg-gray-900 shadow-xl cursor-default mx-4 mb-8 md:mx-20"
             >
               <figure>
-                <img src={project?.projectImg} alt="Project" className="p-4" />
+                <img
+                  src={project?.projectImg}
+                  alt="Project"
+                  className="p-4 w-72"
+                />
               </figure>
 
               <div className="card-body">

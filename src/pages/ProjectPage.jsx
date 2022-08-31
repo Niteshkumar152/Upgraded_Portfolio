@@ -25,7 +25,7 @@ export const ProjectPage = () => {
             which I follow for my projects.
           </p>
 
-          <div className="card-actions justify-end">
+          <div className="card-actions justify-end mb-4">
             <div className="badge badge-success text-base p-3">Frontend</div>
             <div className="badge badge-warning cursor-default font-sans text-base p-3">
               Backend
