@@ -57,7 +57,7 @@ export const Projects = ({ showLessProjects }) => {
                 </div>
                 <div className="card-actions justify-end">
                   <button className="btn btn-primary mt-4">
-                    {project?.buttonData}
+                    <a href={project?.projectLink}> {project?.buttonData}</a>
                   </button>
                 </div>
               </div>
