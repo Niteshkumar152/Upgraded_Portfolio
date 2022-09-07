@@ -22,13 +22,14 @@ export const About = () => {
         <p className="text-base lg:text-xl cursor-default font-sans inline">
           I am Nitesh from Punjab, India. I am currently working as a Software
           Developer at <span className="text-red-500 font-bold">ORACLE</span>{" "}
-          Corporation in 5G Communications Team. I have graduated from National
-          Institute of Technology Jalandhar with a bachelor's of technology
-          degree in Electronics and Communication Engineering in the year 2021.
-          I'm a curious learner with good communication skills. I love to solve
-          problems and deliver results with the right quality and in a timely
-          manner. I am capable of being a good team player. I enjoy working with
-          others.
+          Corporation in 5G Communications Team. I have 1 year and 7 months of
+          experience working in the software development domain. I have
+          graduated from National Institute of Technology Jalandhar with a
+          bachelor's of technology degree in Electronics and Communication
+          Engineering in the year 2021. I'm a curious learner with good
+          communication skills. I love to solve problems and deliver results
+          with the right quality and in a timely manner. I am capable of being a
+          good team player. I enjoy working with others.
         </p>
         <p className="text-base lg:text-xl cursor-default font-sans">
           I have experienced different phases of Software lifecycle:

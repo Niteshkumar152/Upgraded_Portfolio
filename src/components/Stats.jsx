@@ -16,7 +16,7 @@ const Stats = () => {
         </div>
 
         <div className="stat">
-          <div className="stat-figure text-success">
+          <div className="stat-figure text-black">
             <FaBrain className="inline-block w-8 h-8 stroke-current" />
           </div>
           <div className="stat-title">
