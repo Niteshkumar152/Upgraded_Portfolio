@@ -2,7 +2,7 @@ import Stats from "./Stats.jsx";
 
 export const Skills = () => {
   return (
-    <div className="fade-in my-20 overflow-x-hidden">
+    <div className="fade-in my-20 overflow-x-hidden overflow-y-hidden">
       <div className="text-center text-5xl md:text-6xl cursor-default mb-4">
         Skills
       </div>
