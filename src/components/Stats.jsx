@@ -20,7 +20,7 @@ const Stats = () => {
             <FaBrain className="inline-block w-8 h-8 stroke-current" />
           </div>
           <div className="stat-title">
-            <b>Leetcode Questions solved</b>
+            <b>Data Structure Questions solved</b>
           </div>
           <div className="stat-value">1000+</div>
           <div className="stat-desc">Nov 2019 - Present</div>
