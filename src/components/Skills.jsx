@@ -2,12 +2,12 @@ import Stats from "./Stats.jsx";
 
 export const Skills = () => {
   return (
-    <div className="fade-in my-20">
+    <div className="fade-in my-20 overflow-x-hidden">
       <div className="text-center text-5xl md:text-6xl cursor-default mb-4">
         Skills
       </div>
       <div className="w-20 h-1 mb-14 bg-primary mx-auto rounded"></div>
-      <div className="flex flex-wrap justify-center mt-14 fade-in">
+      <div className="flex flex-wrap justify-center mt-14 fade-in w-full">
         {/* <div className="mx-4 card card-body bg-gray-800 hover:bg-gray-900 shadow-xl m-auto">
           <h1 className="card-title text-3xl md:text-4xl lg:5xl cursor-default mr-4">
             Skills That I possess
@@ -20,12 +20,12 @@ export const Skills = () => {
         <div className="mx-4 box">
           <div className="flex justify-center w-full">
             <button className={`btn btn-active btn-primary m-2 text-animation`}>
-              React
+              Javascript
             </button>
           </div>
           <div className="flex justify-center gap-8 w-full">
             <button className={`btn btn-active btn-primary m-2 text-animation`}>
-              Javascript
+              React
             </button>
             <div
               className={`btn btn-active btn-primary m-2 text-animation rounded-full`}
@@ -33,12 +33,12 @@ export const Skills = () => {
               Frontend
             </div>
             <button className={`btn btn-active btn-primary m-2 text-animation`}>
-              Tailwind
+              HTML CSS
             </button>
           </div>
           <div className="flex justify-center w-full">
             <button className={`btn btn-active btn-primary m-2 text-animation`}>
-              HTML CSS
+              Tailwind
             </button>
           </div>
         </div>
