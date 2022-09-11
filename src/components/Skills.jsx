@@ -1,5 +1,5 @@
-import skillImg from "../components/layout/assets/skills.jpg";
 import Stats from "./Stats.jsx";
+
 export const Skills = () => {
   return (
     <div className="fade-in my-20">
@@ -7,28 +7,90 @@ export const Skills = () => {
         Skills
       </div>
       <div className="w-20 h-1 mb-14 bg-primary mx-auto rounded"></div>
-      <div className="grid grid-cols-8 mt-14 fade-in">
-        <div className="mx-4 card card-body bg-gray-800 hover:bg-gray-900 shadow-xl col-span-8 md:col-span-5 m-auto">
-          <figure>
-            <img src={skillImg} alt="aboutImgMobile" className="md:hidden" />
-          </figure>
+      <div className="flex flex-wrap justify-center mt-14 fade-in">
+        {/* <div className="mx-4 card card-body bg-gray-800 hover:bg-gray-900 shadow-xl m-auto">
           <h1 className="card-title text-3xl md:text-4xl lg:5xl cursor-default mr-4">
-            Skill Set That I bring to table
+            Skills That I possess
           </h1>
           <p className="text-base lg:text-xl cursor-default font-sans inline">
-            I am Nitesh from Punjab, India. I am currently working as a Software
-            Developer at <span className="text-red-500 font-bold">ORACLE</span>{" "}
-            Corporation in 5G Communications Team. I have graduated from
-            National Institute of Technology Jalandhar with a bachelor's of
-            technology degree in Electronics and Communication Engineering in
-            the year 2021. I'm a curious learner with good communication skills.
-            I love to solve problems and deliver results with the right quality
-            and in a timely manner. I am capable of being a good team player. I
-            enjoy working with others.
+            I am very passionate about problem solving and using data
+            structures, algorithms to form a product as a solution.
           </p>
+        </div> */}
+        <div className="mx-4 box">
+          <div className="flex justify-center w-full">
+            <button className={`btn btn-active btn-primary m-2 text-animation`}>
+              React
+            </button>
+          </div>
+          <div className="flex justify-center gap-8 w-full">
+            <button className={`btn btn-active btn-primary m-2 text-animation`}>
+              Javascript
+            </button>
+            <div
+              className={`btn btn-active btn-primary m-2 text-animation rounded-full`}
+            >
+              Frontend
+            </div>
+            <button className={`btn btn-active btn-primary m-2 text-animation`}>
+              Tailwind
+            </button>
+          </div>
+          <div className="flex justify-center w-full">
+            <button className={`btn btn-active btn-primary m-2 text-animation`}>
+              HTML CSS
+            </button>
+          </div>
         </div>
-        <div className="mx-4 col-span-3 hidden md:block">
-          <img src={skillImg} alt="about-img" />
+        <div className="mx-4 box">
+          <div className="flex justify-center w-full">
+            <button className={`btn btn-active btn-warning m-2 text-animation`}>
+              SpringBoot
+            </button>
+          </div>
+          <div className="flex justify-center gap-8 w-full">
+            <button className={`btn btn-active btn-warning m-2 text-animation`}>
+              Java
+            </button>
+            <div
+              className={`btn btn-active btn-warning m-2 text-animation rounded-full`}
+            >
+              Backend
+            </div>
+            <button className={`btn btn-active btn-warning m-2 text-animation`}>
+              Python
+            </button>
+          </div>
+          <div className="flex justify-center w-full">
+            <button className={`btn btn-active btn-warning m-2 text-animation`}>
+              Behave Framework
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="mx-4 box">
+        <div className="flex justify-center w-full">
+          <button className={`btn btn-active btn-success m-2 text-animation`}>
+            Docker
+          </button>
+        </div>
+        <div className="flex justify-center gap-8 w-full">
+          <button className={`btn btn-active btn-success m-2 text-animation`}>
+            Kubernetes
+          </button>
+          <div
+            className={`btn btn-active btn-success m-2 text-animation rounded-full`}
+          >
+            DevOps/Monitoring
+          </div>
+          <button className={`btn btn-active btn-success m-2 text-animation`}>
+            Grafana
+          </button>
+        </div>
+        <div className="flex justify-center w-full">
+          <button className={`btn btn-active btn-success m-2 text-animation`}>
+            Prometheus
+          </button>
         </div>
       </div>
       <Stats />

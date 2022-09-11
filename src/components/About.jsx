@@ -1,5 +1,6 @@
 import React from "react";
 import aboutImg from "../components/layout/assets/about-me.png";
+import { FaAngleDoubleRight } from "react-icons/fa";
 
 export const About = () => {
   return (
@@ -26,25 +27,39 @@ export const About = () => {
           experience working in the software development domain. I have
           graduated from National Institute of Technology Jalandhar with a
           bachelor's of technology degree in Electronics and Communication
-          Engineering in the year 2021. I'm a curious learner with good
-          communication skills. I love to solve problems and deliver results
-          with the right quality and in a timely manner. I am capable of being a
-          good team player. I enjoy working with others.
+          Engineering in the year 2021.
         </p>
         <p className="text-base lg:text-xl cursor-default font-sans">
-          I have experienced different phases of Software lifecycle:
+          <FaAngleDoubleRight className="inline mb-1 mr-2 text-primary" />
+          I'm a curious learner with good communication skills. I love to solve
+          problems and deliver results with the right quality and in a timely
+          manner. I am capable of being a good team player. I enjoy working with
+          others.
+        </p>
+        <p className="text-base lg:text-xl cursor-default font-sans">
+          <FaAngleDoubleRight className="inline mb-1 mr-2 text-primary" /> I am
+          very passionate about web development. I am currently learning Java ,
+          Spring boot. My goal is to become a full stack developer.
+        </p>
+
+        <p className="text-base lg:text-xl cursor-default font-sans mb-2">
+          <FaAngleDoubleRight className="inline mb-1 mr-2 text-primary" />I have
+          experienced different phases of Software development lifecycle:
         </p>
         <div className="card-actions justify-end">
+          <div className="badge badge-primary cursor-default font-sans text-base p-3">
+            Requirement understanding
+          </div>
           <div className="badge badge-success text-base md:hidden p-3">
             Desiging
           </div>
           <div className="badge badge-warning cursor-default font-sans text-base p-3">
-            Development
+            Developing
           </div>
           <div className="badge badge-info cursor-default font-sans text-base p-3">
             Testing
           </div>
-          <div className="badge badge-accent cursor-default font-sans text-base p-3">
+          <div className="badge badge-accent cursor-default font-sans text-base p-3 text-black">
             Debugging
           </div>
           <div className="badge badge-error cursor-default font-sans text-base p-3">

@@ -6,6 +6,12 @@ export const Experience = () => {
   const [jobs, setJobs] = useState([]);
   const [value, setValue] = useState(0);
   const [loading, setLoading] = useState(true);
+  const [showAnimation, setShowAnimation] = useState(false);
+
+  const toggleClassName = () => {
+    setTimeout(() => setShowAnimation(!showAnimation), 5000);
+    return showAnimation;
+  };
 
   const fetchJobs = async () => {
     setJobs(experience_data);
@@ -31,7 +37,11 @@ export const Experience = () => {
         Experience
       </div>
       <div className="w-40 h-1 mb-14 bg-primary mx-auto rounded"></div>
-      <div className="flex flex-col md:flex-row justify-center">
+      <div
+        className={`flex flex-col md:flex-row justify-center fade-in ${
+          toggleClassName() ? "fade-in" : ""
+        }`}
+      >
         <div className="mx-4">
           <ul className="menu menu-horizontal md:menu-vertical md:w-56 rounded-box bg-gray-900">
             {jobs.map((job, index) => (
