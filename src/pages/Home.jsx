@@ -48,7 +48,7 @@ function Home() {
             </label>
             <button className="btn text-xs text-black hover:text-white ml-2 md:text-sm bg-white hover:bg-primary">
               <FaDownload className="mr-2" />
-              <a href="https://drive.google.com/file/d/1cJXkfB6IXMLtIwtR4xioM4KftnsoXCla/view?usp=sharing">
+              <a href="https://drive.google.com/file/d/1YDTHlP76jz5kdwZIaHIoyXHWxH9Q2_Qf/view?usp=sharing">
                 download cv
               </a>
             </button>
