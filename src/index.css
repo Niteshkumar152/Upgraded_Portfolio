@@ -90,6 +90,12 @@ h4 {
   margin-bottom: 0.75rem;
   font-family: "Roboto", sans-serif;
 }
+.exp_sec{
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+  font-family: "Roboto", sans-serif;
+}
 
 .wave {
   animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */

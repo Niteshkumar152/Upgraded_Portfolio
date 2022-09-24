@@ -43,16 +43,16 @@ export const Experience = () => {
         }`}
       >
         <div className="mx-4">
-          <ul className="menu menu-horizontal md:menu-vertical md:w-56 rounded-box bg-gray-900">
+          <ul className="menu menu-horizontal md:menu-vertical md:w-56 rounded-box bg-gray-900 p-2">
             {jobs.map((job, index) => (
               <li
-                className={`${job.id === value ? "bg-warning" : ""}`}
+                className={`${job.id === value ? "bordered" : ""}`}
                 key={index}
                 onClick={() => {
                   setValue(job.id);
                 }}
               >
-                <p>{job.company}</p>
+                <p className="exp_sec">{job.company}</p>
               </li>
             ))}
           </ul>

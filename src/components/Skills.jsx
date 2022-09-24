@@ -8,15 +8,6 @@ export const Skills = () => {
       </div>
       <div className="w-20 h-1 mb-14 bg-primary mx-auto rounded"></div>
       <div className="flex flex-wrap justify-center mt-14 fade-in w-full">
-        {/* <div className="mx-4 card card-body bg-gray-800 hover:bg-gray-900 shadow-xl m-auto">
-          <h1 className="card-title text-3xl md:text-4xl lg:5xl cursor-default mr-4">
-            Skills That I possess
-          </h1>
-          <p className="text-base lg:text-xl cursor-default font-sans inline">
-            I am very passionate about problem solving and using data
-            structures, algorithms to form a product as a solution.
-          </p>
-        </div> */}
         <div className="mx-4 box">
           <div className="flex justify-center w-full">
             <button className={`btn btn-active btn-primary m-2 text-animation`}>
@@ -68,31 +59,57 @@ export const Skills = () => {
           </div>
         </div>
       </div>
-      <div className="mx-4 box">
-        <div className="flex justify-center w-full">
-          <button className={`btn btn-active btn-success m-2 text-animation`}>
-            Docker
-          </button>
-        </div>
-        <div className="flex justify-center gap-8 w-full">
-          <button className={`btn btn-active btn-success m-2 text-animation`}>
-            Kubernetes
-          </button>
-          <div
-            className={`btn btn-active btn-success m-2 text-animation rounded-full`}
-          >
-            DevOps/Monitoring
+      <div className="flex flex-wrap justify-center mt-14 fade-in w-full">
+        <div className="mx-4 box">
+          <div className="flex justify-center w-full">
+            <button className={`btn btn-active btn-success m-2 text-animation`}>
+              Grafana
+            </button>
           </div>
-          <button className={`btn btn-active btn-success m-2 text-animation`}>
-            Grafana
-          </button>
+          <div className="flex justify-center gap-8 w-full">
+            <button className={`btn btn-active btn-success m-2 text-animation`}>
+              Kubernetes
+            </button>
+            <div
+              className={`btn btn-active btn-success m-2 text-animation rounded-full`}
+            >
+              DevOps/Monitoring
+            </div>
+            <button className={`btn btn-active btn-success m-2 text-animation`}>
+              Docker
+            </button>
+          </div>
+          <div className="flex justify-center w-full">
+            <button className={`btn btn-active btn-success m-2 text-animation`}>
+              Prometheus
+            </button>
+          </div>
         </div>
-        <div className="flex justify-center w-full">
-          <button className={`btn btn-active btn-success m-2 text-animation`}>
-            Prometheus
-          </button>
+        <div className="mx-4 box">
+          <div className="flex justify-center w-full">
+            <button className={`btn btn-active m-2 text-animation`}>
+              Git/Github
+            </button>
+          </div>
+          <div className="flex justify-center gap-8 w-full">
+            <button className={`btn btn-active m-2 text-animation`}>
+              Postman
+            </button>
+            <div className={`btn btn-active m-2 text-animation rounded-full`}>
+              Miscellaneous
+            </div>
+            <button className={`btn btn-active m-2 text-animation`}>
+              Vim / Shell scripting
+            </button>
+          </div>
+          <div className="flex justify-center w-full">
+            <button className={`btn btn-active m-2 text-animation`}>
+              Zoom
+            </button>
+          </div>
         </div>
       </div>
+
       <Stats />
     </div>
   );
